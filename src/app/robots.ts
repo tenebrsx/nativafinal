@@ -15,7 +15,7 @@ const aiBots = [
 ];
 
 export default function robots(): MetadataRoute.Robots {
-  const disallow = ["/ads", "/logos", "/demo", "/demos", "/refined", "/visualmockup"];
+  const disallow = ["/ads", "/logos", "/demo", "/demos", "/refined", "/visualmockup", "/archieved"];
   return {
     rules: [
       {

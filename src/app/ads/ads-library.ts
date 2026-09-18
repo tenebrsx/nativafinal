@@ -5,7 +5,10 @@ export type AdKind =
   | "inbox-reel"
   | "speed"
   | "maps"
-  | "whatsapp";
+  | "whatsapp"
+  | "seo-reel"
+  | "necesita"
+  | "missing";
 
 type Copy = { es: string; en: string };
 
@@ -443,6 +446,219 @@ Your site asks what matters and sends the lead to WhatsApp with size, date, or t
         mockCards: [],
         waFrom: "Client · now",
         waMsg: "Villa Luna, 4 nights. Available?",
+      },
+    },
+  },
+  {
+    id: "seo-reel",
+    n: "06",
+    theme: "light",
+    format: "reel",
+    label: { es: "Reel · SEO", en: "Reel · SEO" },
+    blurb: {
+      es: "Buscan clínicas. Tu marca sube al #1 con SEO.",
+      en: "They search clinics. Your brand climbs to #1 with SEO.",
+    },
+    caption: {
+      es: `Buscan: “clinicas cerca de mi”.
+
+Tu marca está abajo… hasta que llega la dosis de SEO.
+
+Subes. Pasas a la competencia. Llegas primero.
+
+Tu clínica merece lo mejor. Nativa.
+
+👉 nativa.studio
+
+#NativaWebStudio #SEORD #ClinicasRD #Google #SantoDomingo`,
+      en: `They search: “clinicas cerca de mi”.
+
+Your brand is buried… until the SEO dose hits.
+
+You climb. You pass the competition. You land first.
+
+Your clinic deserves the best. Nativa.
+
+👉 nativa.studio
+
+#NativaWebStudio #SEO #Clinics #Google #SantoDomingo`,
+    },
+    frame: {
+      es: {
+        studio: "Web Studio · RD",
+        eyebrow: "Optimización SEO",
+        lead: "Tu negocio merece",
+        payoff: "lo mejor.",
+        body: "De la página 2 al #1 en los resultados.",
+        proof: ["Más visibilidad", "Más clics", "Más clientes"],
+        cta: "Elige Nativa",
+        url: "nativa.studio",
+        mockBrand: "Tu negocio",
+        mockNav: [],
+        mockHero: "",
+        mockCta: "",
+        mockCards: [],
+      },
+      en: {
+        studio: "Web Studio · DR",
+        eyebrow: "SEO optimization",
+        lead: "Your business deserves",
+        payoff: "the best.",
+        body: "From page 2 to #1 in the results.",
+        proof: ["More visibility", "More clicks", "More clients"],
+        cta: "Choose Nativa",
+        url: "nativa.studio",
+        mockBrand: "Your business",
+        mockNav: [],
+        mockHero: "",
+        mockCta: "",
+        mockCards: [],
+      },
+    },
+  },
+  {
+    id: "necesita",
+    n: "07",
+    theme: "dark",
+    format: "still",
+    label: { es: "Necesita · Editorial", en: "Needs · Editorial" },
+    blurb: {
+      es: "Vogue silence. Una frase. Status.",
+      en: "Vogue silence. One line. Status.",
+    },
+    caption: {
+      es: `Tu negocio necesita un website.
+
+No una plantilla.
+Una presencia.
+
+Nativa — sitios que se ven caros
+y cierran por WhatsApp.
+
+👉 nativa.studio
+
+#NativaWebStudio #DiseñoWebRD #SantoDomingo #MarketingDigitalRD #PymesRD`,
+      en: `Your business needs a website.
+
+Not a template.
+A presence.
+
+Nativa — sites that look expensive
+and close on WhatsApp.
+
+👉 nativa.studio
+
+#NativaWebStudio #WebDesign #SantoDomingo #DigitalMarketing #SmallBusiness`,
+    },
+    frame: {
+      es: {
+        studio: "NATIVA · SANTO DOMINGO",
+        eyebrow: "NATIVA · SANTO DOMINGO",
+        lead: "TU NEGOCIO",
+        payoff: "NECESITA",
+        body: "un website",
+        proof: [],
+        cta: "",
+        url: "nativa.studio",
+        mockBrand: "Maison Brisa",
+        mockNav: ["Colección", "Atelier", "Reserva"],
+        mockHero: "Boutique · Santo Domingo",
+        mockCta: "Ver el lookbook",
+        mockCards: [
+          { k: "Maps", v: "#1 zona" },
+          { k: "Chat", v: "< 2 min" },
+          { k: "Live", v: "18 días" },
+        ],
+      },
+      en: {
+        studio: "NATIVA · SANTO DOMINGO",
+        eyebrow: "NATIVA · SANTO DOMINGO",
+        lead: "YOUR BUSINESS",
+        payoff: "NEEDS",
+        body: "a website",
+        proof: [],
+        cta: "",
+        url: "nativa.studio",
+        mockBrand: "Maison Brisa",
+        mockNav: ["Collection", "Atelier", "Reserve"],
+        mockHero: "Boutique · Santo Domingo",
+        mockCta: "Open lookbook",
+        mockCards: [
+          { k: "Maps", v: "#1 area" },
+          { k: "Chat", v: "< 2 min" },
+          { k: "Live", v: "18 days" },
+        ],
+      },
+    },
+  },
+  {
+    id: "missing",
+    n: "08",
+    theme: "dark",
+    format: "still",
+    label: { es: "Falta · Brutal", en: "Missing · Brutal" },
+    blurb: {
+      es: "Wrapped energy. Lo que te falta: un sitio.",
+      en: "Wrapped energy. What’s missing: a site.",
+    },
+    caption: {
+      es: `Lo que le falta a tu negocio:
+
+un sitio.
+
+No más Instagram como página web.
+Una presencia real — rápida, clara,
+que mande gente a WhatsApp.
+
+Nativa. Hecho en RD.
+
+👉 nativa.studio
+
+#NativaWebStudio #DiseñoWebRD #SantoDomingo #MarketingDigitalRD #PymesRD`,
+      en: `What your business is missing:
+
+a site.
+
+Stop using Instagram as your homepage.
+Get a real presence — fast, clear,
+built to send people to WhatsApp.
+
+Nativa. Built in the DR.
+
+👉 nativa.studio
+
+#NativaWebStudio #WebDesign #SantoDomingo #DigitalMarketing #SmallBusiness`,
+    },
+    frame: {
+      es: {
+        studio: "NATIVA · RD",
+        eyebrow: "2026 · REPORTE",
+        lead: "Lo que le falta",
+        payoff: "a tu negocio",
+        body: "un sitio.",
+        proof: ["WhatsApp", "Maps", "Velocidad"],
+        cta: "Arma el tuyo",
+        url: "nativa.studio",
+        mockBrand: "Nativa",
+        mockNav: [],
+        mockHero: "",
+        mockCta: "",
+        mockCards: [],
+      },
+      en: {
+        studio: "NATIVA · DR",
+        eyebrow: "2026 · REPORT",
+        lead: "What your business",
+        payoff: "is missing",
+        body: "a site.",
+        proof: ["WhatsApp", "Maps", "Speed"],
+        cta: "Build yours",
+        url: "nativa.studio",
+        mockBrand: "Nativa",
+        mockNav: [],
+        mockHero: "",
+        mockCta: "",
+        mockCards: [],
       },
     },
   },

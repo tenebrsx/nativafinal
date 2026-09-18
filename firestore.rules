@@ -1,0 +1,29 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    function isAdsAdmin() {
+      return request.auth != null
+        && request.auth.token.email == 'tenebrsx@gmail.com'
+        && request.auth.token.email_verified == true;
+    }
+
+    // Public lead capture (contact form + WhatsApp funnel). Creates only.
+    match /leads/{leadId} {
+      allow create: if request.resource.data.keys().hasAny(['submittedAt'])
+        && request.resource.data.submittedAt is timestamp;
+      allow read, update, delete: if isAdsAdmin();
+    }
+
+    match /adsFolders/{folderId} {
+      allow read, write: if isAdsAdmin();
+    }
+
+    match /adsMeta/{metaId} {
+      allow read, write: if isAdsAdmin();
+    }
+
+    match /adsAssets/{assetId} {
+      allow read, write: if isAdsAdmin();
+    }
+  }
+}

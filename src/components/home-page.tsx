@@ -115,9 +115,23 @@ export default function HomePage() {
           </Reveal>
 
           <Reveal delay={80}>
-            <div id="stack" style={{ marginTop: "48px", padding: "28px", background: "var(--gray-foam)", borderRadius: "var(--radius-lg)", border: "1px solid var(--border)" }}>
-              <div className="section-label" style={{ marginBottom: "8px" }}>{dict.services.stack_label}</div>
-              <p style={{ fontSize: "14px", color: "var(--muted)", marginBottom: "20px", maxWidth: "560px" }}>{dict.services.stack_sub}</p>
+            <div
+              id="stack"
+              className="home-stack-desktop"
+              style={{
+                marginTop: "48px",
+                padding: "28px",
+                background: "var(--gray-foam)",
+                borderRadius: "var(--radius-lg)",
+                border: "1px solid var(--border)",
+              }}
+            >
+              <div className="section-label" style={{ marginBottom: "8px" }}>
+                {dict.services.stack_label}
+              </div>
+              <p style={{ fontSize: "14px", color: "var(--muted)", marginBottom: "20px", maxWidth: "560px" }}>
+                {dict.services.stack_sub}
+              </p>
               <StackStories />
             </div>
           </Reveal>

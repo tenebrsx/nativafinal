@@ -367,17 +367,6 @@
   background: var(--pb-stage-glow-shop), var(--pb-stage);
 }
 
-.pb-teaser.is-on .pb-sec-cta .pb-teaser-go,
-.pb-sec.is-in .pb-sec-cta .pb-teaser-go {
-  animation: pb-teaser-pulse 0.9s cubic-bezier(0.16, 1, 0.3, 1) 0.95s 1 both;
-}
-
-@keyframes pb-teaser-pulse {
-  0% { transform: scale(1); box-shadow: 0 10px 24px rgba(30, 79, 215, 0.35), 0 0 0 0 rgba(30, 79, 215, 0.4); }
-  55% { transform: scale(1.05); box-shadow: 0 10px 24px rgba(30, 79, 215, 0.35), 0 0 0 14px rgba(30, 79, 215, 0); }
-  100% { transform: scale(1); box-shadow: 0 10px 24px rgba(30, 79, 215, 0.35), 0 0 0 0 rgba(30, 79, 215, 0); }
-}
-
 .pb-sec:not(.is-in) .pb-sec-head .section-label,
 .pb-sec:not(.is-in) .pb-sec-title,
 .pb-sec:not(.is-in) .pb-sec-head > p,

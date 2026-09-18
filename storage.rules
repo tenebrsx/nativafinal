@@ -1,0 +1,18 @@
+rules_version = '2';
+service firebase.storage {
+  match /b/{bucket}/o {
+    function isAdsAdmin() {
+      return request.auth != null
+        && request.auth.token.email == 'tenebrsx@gmail.com'
+        && request.auth.token.email_verified == true;
+    }
+
+    match /ads-studio/{userId}/{assetId}/{fileName} {
+      allow read, delete: if isAdsAdmin() && request.auth.uid == userId;
+      allow create, update: if isAdsAdmin()
+        && request.auth.uid == userId
+        && request.resource.size < 15 * 1024 * 1024
+        && request.resource.contentType.matches('image/.*');
+    }
+  }
+}
